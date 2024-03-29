@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\manohara.c\Training\SpringDemos\HotelProject\src\main\java\Customer.java"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="com.voya.auto"/>
+			<item value="com.hotel.dist"/>
+			<item value="HotelProject"/>
+			<item value="com.voya.dist"/>
+		</list>
+		<list key="name">
+			<item value="HotelProject"/>
+			<item value="VehicleProject"/>
+		</list>
+		<list key="artifactId">
+			<item value="Instruments"/>
+			<item value="HotelProject"/>
+			<item value="com.hotel.dist"/>
+			<item value="SpringAssignments"/>
+			<item value="SpringBasics"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\manohara.c\Training\SpringDemos\spring-productapp-mybatis"/>
+			<item value="C:\Users\manohara.c\Training\SpringDemos\spring-bookapp-mybatis"/>
+			<item value="C:\Users\manohara.c\Training\SpringDemos\spring-mvc-basic"/>
+			<item value="C:\Users\manohara.c\Training\SpringDemos\spring-doctorapp-basic"/>
+			<item value="C:\Users\manohara.c\Training\SpringDemos\spring-bookapp-jdbc"/>
+			<item value="C:\Users\manohara.c\Training\SpringDemos\spring-bookapp-basic"/>
+			<item value="C:\Users\manohara.c\Training\SpringDemos\spring-boot-autowire"/>
+			<item value="C:\Users\manohara.c\Training\SpringTool"/>
+			<item value="C:\Users\manohara.c\Downloads\spring-boot-basic"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

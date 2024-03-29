@@ -1,0 +1,31 @@
+package com.voya.auto;
+@Autowired
+public class Perpormer  {
+	@Autowired
+	@Qualifier("keyboard")
+	private IInstrument iInstrument;
+	
+	@Autowired	
+	private IInstrument guitar;
+	
+	@Autowired
+	@Qualifier("violin")
+	private IInstrument instrument;
+
+	
+
+
+
+	public void playMusic(String choice, String song) {
+		if (choice.equals("v")) {
+			instrument.play(song);
+		}
+		if (choice.equals("k")) {
+			guitar.play(song);
+		}
+		if (choice.equals("g")) {
+			iInstrument.play(song);
+          }
+    }
+
+}

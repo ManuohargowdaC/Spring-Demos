@@ -1,0 +1,63 @@
+package com.spring.constructor;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Student {
+	
+	private String studentName;
+	private Integer studentId;
+	private Cource cource;
+	
+	
+	public Student(Cource cource) {
+		super();
+		this.cource=cource;
+	}
+	
+	
+	public Student() {
+		super();
+	}
+
+
+	public Student(String studentName, Integer studentId) {
+		super();
+		this.studentName = studentName;
+		this.studentId = studentId;
+	}
+
+
+	public String getStudentName() {
+		return studentName;
+	}
+
+	@Value("Manohar")
+	public void setStudentName(String studentName) {
+		this.studentName = studentName;
+	}
+
+
+	public Integer getStudentId() {
+		return studentId;
+	}
+
+	@Value("123")
+	public void setStudentId(Integer studentId) {
+		this.studentId = studentId;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Student [studentName=" + studentName + ", studentId=" + studentId + ", cource=" + cource + "]";
+	}
+
+
+	
+	
+	
+	
+
+}

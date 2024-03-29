@@ -1,0 +1,5 @@
+package com.insuranceapp.controllers;
+
+public class AppUserController {
+
+}

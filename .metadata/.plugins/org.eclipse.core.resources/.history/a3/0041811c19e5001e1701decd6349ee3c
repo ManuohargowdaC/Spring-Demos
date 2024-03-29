@@ -1,0 +1,12 @@
+package com.spring.autowiring;
+
+public class Rectangle implements Shape{
+
+	public void area(int x, int y) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+
+}

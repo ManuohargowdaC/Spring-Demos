@@ -1,0 +1,13 @@
+package com.insuranceapp.service;
+
+import java.nio.file.attribute.UserDefinedFileAttributeView;
+
+import org.springframework.stereotype.Service;
+import org.w3c.dom.UserDataHandler;
+
+import com.insuranceapp.model.AppUser;
+@Service
+public class AppUserServiceImpl  {
+	
+
+}

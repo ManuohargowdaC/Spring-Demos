@@ -1,0 +1,12 @@
+package com.insuranceapp.model;
+
+import org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration;
+
+public class AppUserMapper {
+	
+	public AppUser convertToAppUser(UserDetails userDetails) {
+		String username = userDetails.getUsername();
+		string password = user
+	}
+
+}

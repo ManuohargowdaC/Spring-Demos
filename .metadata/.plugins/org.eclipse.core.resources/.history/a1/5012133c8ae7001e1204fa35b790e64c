@@ -1,0 +1,46 @@
+package com.productapp.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.productapp.model.Product;
+import com.productapp.service.IProductService;
+
+public class ProductController {
+	
+	@Autowired
+	IProductService iProductService;
+	
+	
+	void addProduct(Product product) {
+		iProductService.addProduct(product);
+	}
+	void updateProduct(double price, int productId) {
+		iProductService.updateProduct(price, productId);
+	}
+	void deleteProduct(int productId) {
+		iProductService.deleteProduct(productId);
+	}
+	
+	
+	Product getById(int productId) {
+		return iProductService.getById(productId);
+	}
+	List<Product> getAll(){
+		return iProductService.getAll();
+	}
+	List<Product>getByBrand(String brand){
+		return iProductService.getByBrand(brand);
+		
+	}
+	List<Product>getByLessPrice(double price){
+		return iProductService.getByLessPrice(price);
+	}
+	List<Product>getByCategoryandPrice(String category, double price){
+		return iProductService.getByCategoryandPrice(category, price);
+	}
+	
+	
+	
+}

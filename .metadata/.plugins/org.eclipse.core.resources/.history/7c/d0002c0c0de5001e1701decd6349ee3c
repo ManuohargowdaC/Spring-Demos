@@ -1,0 +1,48 @@
+package com.spring.setter;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Employee {
+	String employeeName;
+	Integer employyeId;
+	private String address;
+	
+	
+	public Employee() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Employee(String employeeName, Integer employyeId) {
+		super();
+		this.employeeName = employeeName;
+		this.employyeId = employyeId;
+	}
+
+	public String getEmployeeName() {
+		return employeeName;
+	}
+	@Value("Ram")
+	public void setEmployeeName(String employeeName) {
+		this.employeeName = employeeName;
+	}
+
+	public Integer getEmployyeId() {
+		return employyeId;
+	}
+	@Value("10")
+	public void setEmployyeId(Integer employyeId) {
+		this.employyeId = employyeId;
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [employeeName=" + employeeName + ", employyeId=" + employyeId + "]";
+	}
+	
+	
+	
+
+}

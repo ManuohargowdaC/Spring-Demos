@@ -1,0 +1,5 @@
+package com.insuranceapp.util;
+
+public class JwtTokenUtil {
+
+}

@@ -1,0 +1,4 @@
+student.studentName=Ram;
+student.studentId=123;
+student.cource.cource=cloud;
+student.cource.fees=170000.00;

@@ -1,0 +1,8 @@
+package com.spring.autowiring;
+
+public class Triangle implements Shape {
+	public void area(int x, int y) {P
+		System.out.println("The area :"+(x*y));
+	}
+
+}

@@ -1,0 +1,15 @@
+package main.java;
+
+import java.util.List;
+
+public class Waiter implements IFoodMenu{
+	IFoodMenu menu;
+
+	@Override
+	public List<String> showItems() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+
+}

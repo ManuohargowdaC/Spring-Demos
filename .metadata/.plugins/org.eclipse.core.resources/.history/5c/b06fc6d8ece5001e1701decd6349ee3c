@@ -1,0 +1,5 @@
+package com.voya.auto;
+
+public class IInstrument {
+
+}

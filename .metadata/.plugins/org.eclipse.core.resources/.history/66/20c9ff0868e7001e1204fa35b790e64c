@@ -1,0 +1,28 @@
+package com.insuranceapp.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.insuranceapp.model.Insurance;
+
+@Service
+public class InsuranceSrviceImpl implements IInsuranceService {
+
+	@Override
+	public List<Insurance> getAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Insurance getById(int insuranceId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+	
+	
+
+}

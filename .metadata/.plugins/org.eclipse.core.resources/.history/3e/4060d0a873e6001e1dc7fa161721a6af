@@ -1,0 +1,44 @@
+package org.doctorapp.client;
+
+import java.lang.String;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.List;
+
+import org.doctorapp.exceptions.DoctorNotFoundException;
+import org.doctorapp.model.Doctor;
+import org.doctorapp.model.Specialisation;
+import org.doctorapp.service.DoctorServiceImpl;
+import org.doctorapp.service.IDoctorService;
+
+public class User {
+    public static void main(String[] args) {
+        IDoctorService doctorService=new DoctorServiceImpl();
+        Specialisation specialization=Specialisation.GYNAEC;
+        String speciality=specialization.getSpeciality();
+//        Doctor doctor=new Doctor("Manohar",speciality,800,9,1);
+//        doctorService.addDoctor(doctor);
+
+//        doctorService.updateDoctor(1,3000);
+
+        List<Doctor> doctors=doctorService.getAll();
+        for(Doctor doctor:doctors){
+            System.out.println(doctor);
+        }
+
+        System.out.println("----------------");
+
+        try {
+            List<Doctor> doctorList1=doctorService.getBySpecialityAndFees("GYNAECOLOGIST",3000.0);
+            for(Doctor doctor:doctorList1){
+                System.out.println(doctor);
+            }
+        } catch (DoctorNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
+}
+

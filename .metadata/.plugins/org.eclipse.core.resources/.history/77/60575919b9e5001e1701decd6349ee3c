@@ -1,0 +1,6 @@
+package main.java;
+
+public class AppConfig {
+	public Chainees getChainees();
+
+}

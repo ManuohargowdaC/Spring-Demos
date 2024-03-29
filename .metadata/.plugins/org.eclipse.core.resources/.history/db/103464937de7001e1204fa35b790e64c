@@ -1,0 +1,55 @@
+package com.insuranceapp.controllers;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.insuranceapp.exception.InsuranceNotFoundException;
+import com.insuranceapp.model.Insurance;
+import com.insuranceapp.service.IInsuranceService;
+
+@RestController
+public class InsuranceControllers {
+	
+	@Autowired
+	IInsuranceService iInsuranceService;
+	
+	@PostMapping("/insurances")
+	void addInsurance(@RequestBody Insurance insurance) {
+		iInsuranceService.addInsurance(insurance);
+	}
+	
+	@PutMapping("/insurances")
+	void updateInsurance(@RequestBody int insuranceId,double premium) {
+		iInsuranceService.updateInsurance(insurance.getInsuranceId(), insurance.getPremium());
+	}
+	
+	@DeleteMapping("/insurances")
+	void deleteInsurance(int insuranceId) {
+		iInsuranceService.deleteInsurance(insuranceId);
+		
+	}
+	
+	List<Insurance> getAll(){
+		
+	}
+	List<Insurance> getByBrand(String brand){
+		
+	}
+	List<Insurance> getByBrandAndType(String brand,String type){
+		
+	} 
+	List<Insurance> getByTypeAndLeesPremium(String type,double premium){
+		
+	}
+	Insurance getById(int insuranceId) {
+	}
+}
+	
+
+

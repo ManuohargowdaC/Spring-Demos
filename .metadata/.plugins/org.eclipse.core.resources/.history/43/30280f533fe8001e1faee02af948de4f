@@ -1,0 +1,17 @@
+package com.insuranceapp.service;
+
+import java.nio.file.attribute.UserDefinedFileAttributeView;
+
+import org.springframework.stereotype.Service;
+
+import com.insuranceapp.model.AppUser;
+@Service
+public class AppUserServiceImpl implements UserDeta{
+	void addUser(AppUser appUser) {
+		
+	}
+	AppUser firnByUserName(String userName) {
+		
+	}
+
+}

@@ -1,0 +1,34 @@
+package com.insuranceapp.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.insuranceapp.model.AppUser;
+import com.insuranceapp.model.AppUserMapper;
+
+@RestController
+public class AppUserController {
+	
+	@Autowired
+	private UserDetails appUserServiceImpl;
+	
+	@Autowired
+	private AppUserMapper appUserMapper;
+	
+	@PostMapping("/register")
+	ResponseEntity<void> createUser(@RequestBody AppUser appUser) {
+		UserDetails details = appUserMapper.convertToAppUserDetails(appUser);
+		appUserServiceImpl.createUser(details);
+		return ResponseEntity.status(HttpStatus.CREATED.value().build());
+	}
+	
+	@PostMapping("/authenticate")
+	ResponseEntity<String> authenticateUser(@RequestBody AppUser appUser);
+
+}

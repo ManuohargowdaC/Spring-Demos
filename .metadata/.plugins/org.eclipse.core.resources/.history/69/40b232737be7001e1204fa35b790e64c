@@ -1,0 +1,37 @@
+package com.insuranceapp.controllers;
+
+import java.util.List;
+
+import com.insuranceapp.exception.InsuranceNotFoundException;
+import com.insuranceapp.model.Insurance;
+
+public class InsuranceControllers {
+	
+	void addInsurance(Insurance insurance) {
+		
+	}
+	void updateInsurance(int insuranceId,double premium) {
+		
+	}
+	void deleteInsurance(int insuranceId) {
+		
+	}
+	
+	List<Insurance> getAll(){
+		
+	}
+	List<Insurance> getByBrand(String brand){
+		
+	}
+	List<Insurance> getByBrandAndType(String brand,String type){
+		
+	} 
+	List<Insurance> getByTypeAndLeesPremium(String type,double premium){
+		
+	}
+	Insurance getById(int insuranceId) {
+	}
+}
+	
+
+

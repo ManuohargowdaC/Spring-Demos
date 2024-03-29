@@ -1,0 +1,8 @@
+package com.spring.autowiring;
+
+public class ShapeFactory {
+	Shape shape;
+	void printArea();
+	
+
+}

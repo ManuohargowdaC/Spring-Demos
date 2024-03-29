@@ -1,0 +1,61 @@
+package com.bookapp.repository;
+
+import java.util.List;
+
+import com.bookapp.exception.BookNotFoundException;
+import com.bookapp.exception.IdNotFoundException;
+import com.bookapp.model.Book;
+
+public class BookRepositoryImpl implements IBookRepository {
+
+	@Override
+	public void addBook(Book book) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void updateBook(int bookId, double price) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteBook(int bookId) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Book findById(int bookId) throws IdNotFoundException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Book> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Book> findByAuthor(String author) throws BookNotFoundException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Book> findByLesserPrice(double price) throws BookNotFoundException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Book> findByAuthorCategory(String author, String Category) throws BookNotFoundException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+
+}

@@ -1,0 +1,15 @@
+package com.insuranceapp.service;
+
+import org.springframework.stereotype.Service;
+
+import com.insuranceapp.model.AppUser;
+@Service
+public class AppUserServiceImpl implements UserDeat{
+	void addUser(AppUser appUser) {
+		
+	}
+	AppUser firnByUserName(String userName) {
+		
+	}
+
+}

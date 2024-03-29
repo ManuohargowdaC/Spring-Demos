@@ -1,0 +1,19 @@
+package com.insuranceapp.repository;
+
+import java.util.List;
+
+import com.insuranceapp.exception.InsuranceNotFoundException;
+import com.insuranceapp.model.Insurance;
+
+public interface IInsuranceRepository {
+	
+	void addInsurance(Insurance insurance);
+	void updateInsurance(int insuranceId,double premium);
+	void deleteInsurance(int insuranceId);
+	
+	List<Insurance> findAll();
+	List<Insurance> findByBrand(String brand) throws InsuranceNotFoundException;
+	List<Insurance> findByBrandAndType(String brand,String type) throws InsuranceNotFoundException;
+	List<Insurance> findByTypeAndLeesPremium(String type,double premium) throws InsuranceNotFoundException;
+
+}

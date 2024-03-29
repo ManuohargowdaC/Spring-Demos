@@ -1,0 +1,19 @@
+package com.bookapp;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.bookapp.service.IBookService;
+
+@SpringBootApplication
+public class SpringBookappBasicApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SpringBookappBasicApplication.class, args);
+		
+		@Autowired
+		IBookService ibookService;
+	}
+
+}

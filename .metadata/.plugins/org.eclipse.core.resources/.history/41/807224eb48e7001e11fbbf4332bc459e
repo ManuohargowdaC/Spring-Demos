@@ -1,0 +1,24 @@
+package com.productapp.repository;
+
+import java.util.List;
+
+import org.apache.ibatis.annotations.Mapper;
+
+import com.productapp.exception.IdNotFoundException;
+import com.productapp.exception.ProductNotFoundException;
+import com.productapp.model.Product;
+@Mapper
+public interface IProductRepository {
+	
+	void addProduct(Product product);
+	void updateProduct(Product product);
+	void deleteProduct(Product product);
+	
+	
+	Product findById(int productId) throws IdNotFoundException;
+	List<Product> findAll() throws ProductNotFoundException;
+	List<Product>findByBrand(String brand) throws ProductNotFoundException;
+	List<Product>findByLessPrice(double price) throws ProductNotFoundException;
+	List<Product>findByCategoryandPrice(String category, double price) throws ProductNotFoundException;
+	
+}
